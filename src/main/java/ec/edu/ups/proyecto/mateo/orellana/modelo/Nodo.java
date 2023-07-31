@@ -4,7 +4,6 @@
  */
 package ec.edu.ups.proyecto.mateo.orellana.modelo;
 
-import ec.edu.ups.proyecto.mateo.orellana.modelo.Contacto;
 
 /**
  *

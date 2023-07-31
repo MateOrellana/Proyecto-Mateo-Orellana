@@ -79,14 +79,35 @@ public class Main {
                     arbol.agregarRedSocial(nombreRedSocial, redSocial, url);
                     break;
                 case 6:
-                    System.out.println("Recorrido Preorder:");
-                    arbol.recorridoPreorder();
-                    System.out.println("Recorrido Inorder:");
-                    arbol.recorridoInorder();
-                    System.out.println("Recorrido Postorder:");
-                    arbol.recorridoPostorder();
-                    System.out.println("Recorrido por Achura:");
-                    arbol.recorridoAchura();
+                    System.out.println("Seleccione el tipo de recorrido:");
+                    System.out.println("1. Preorder");
+                    System.out.println("2. Inorder");
+                    System.out.println("3. Postorder");
+                    System.out.println("4. Achura");
+                    System.out.print("Opción: ");
+                    int opcionRecorrido = scanner.nextInt();
+                    scanner.nextLine();
+                    switch (opcionRecorrido) {
+                        case 1:
+                            System.out.println("Recorrido Preorder:");
+                            arbol.recorridoPreorder();
+                            break;
+                        case 2:
+                            System.out.println("Recorrido Inorder:");
+                            arbol.recorridoInorder();
+                            break;
+                        case 3:
+                            System.out.println("Recorrido Postorder:");
+                            arbol.recorridoPostorder();
+                            break;
+                        case 4:
+                            System.out.println("Recorrido por Achura:");
+                            arbol.recorridoAchura();
+                            break;
+                        default:
+                            System.out.println("Opción inválida.");
+                            break;
+                    }
                     break;
                 case 7:
                     int totalContactos = arbol.obtenerNumeroContactos();

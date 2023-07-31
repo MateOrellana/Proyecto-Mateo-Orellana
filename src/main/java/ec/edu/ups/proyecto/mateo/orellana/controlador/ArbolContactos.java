@@ -116,7 +116,7 @@ public class ArbolContactos {
         }
     }
 
-    // Método recorridoPreorder()
+    // Método recorridoPreorder():
     public void recorridoPreorder() {
         recorridoPreorderRec(raiz);
     }
@@ -129,7 +129,7 @@ public class ArbolContactos {
         }
     }
 
-    // Método recorridoInorder()
+    // Método recorridoInorder():
     public void recorridoInorder() {
         recorridoInorderRec(raiz);
     }
@@ -142,7 +142,7 @@ public class ArbolContactos {
         }
     }
 
-    // Método recorridoPostorder()
+    // Método recorridoPostorder():
     public void recorridoPostorder() {
         recorridoPostorderRec(raiz);
     }
@@ -155,7 +155,7 @@ public class ArbolContactos {
         }
     }
 
-    // Método recorridoAchura()
+    // Método recorridoAchura():
     public void recorridoAchura() {
         Queue<Nodo> cola = new LinkedList<>();
         if (raiz != null) {
